@@ -5,14 +5,14 @@ const instance = axios.create({
 })
 
 export default {
-    getRepoList: () =>
+    getRepoList: (repo) =>
         instance({
             'method':'GET',
-            'url': '/users/msashish/repos'
+            'url': `/users/${repo}/repos`
         }),
-    getRepoEvents: () =>
+    getRepoEvents: (repo) =>
         instance({
             'method':'GET',
-            'url': '/users/msashish/events'
+            'url': `/users/${repo}/events`
         })
 }

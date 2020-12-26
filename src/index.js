@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import DisplayName from './components/DisplayName/DisplayName';
+import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
-import RepoList from "./components/RepoList/RepoList";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <DisplayName />
-    <RepoList/>
-  </React.StrictMode>,
+  <App/>,
   document.getElementById('root')
 );
 
